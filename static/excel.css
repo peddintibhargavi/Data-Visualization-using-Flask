@@ -1,0 +1,58 @@
+/* static/css/excel_upload.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    text-align: center;
+    border: 2px solid #27ae60;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    display:flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    flex-direction: column;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  form {
+    margin-top: 30px;
+  }
+  
+  form input[type="file"] {
+    display: block;
+    margin: 0 auto;
+    padding: 20px;
+    border: 5px solid #27ae60;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+    
+  }
+  
+  form input[type="submit"] {
+    margin-top: 30px;
+    padding: 10px 20px;
+    background-color: #27ae60;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  form input[type="submit"]:hover {
+    background-color: #1e8449;
+  }
+  .container {
+    border: 2px solid #27ae60;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+  

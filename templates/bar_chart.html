@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bar Charts</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h1>Bar Charts</h1>
+    {% for chart in bar_charts %}
+    <div class="chart-container">
+        <!-- Each bar chart will be displayed dynamically -->
+        {{ chart | safe }}
+    </div>
+    {% endfor %}
+</body>
+</html>

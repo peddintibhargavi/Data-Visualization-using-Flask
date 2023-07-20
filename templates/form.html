@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form</title>
+    <link rel="stylesheet" type="text/css" href="/static/form.css">
+</head>
+<body>
+    <h1>Form</h1>
+    <form action="/form" method="post">
+        <!-- Replace 'col1', 'col2', etc., with the actual column names you need -->
+        <label for="Name">Name:</label> 
+        <input type="text" name="Name" required>
+       
+        <br>
+        <label for="age">Age:</label>
+        <input type="number" name="age" required>
+        <br>
+        <label for="occ">Occupation</label>
+        
+                    <select name ="occ"  id="occ" required >
+                        <option value=" "><---occupation---></option>
+                        <option value="Farmer">Farmer</option>
+                        <option value="Software Engineer">Software Engineer</option>
+                        <option value="Teacher">Teacher</option>
+                        <option value="Home maker">Home maker</option>
+                        <option value="Driver">Driver</option>
+                        <option value="Data Scientist">Data Scientist</option>
+                        <option value="Data Analyst">Data Analyst</option>
+                        <option value="AI engineer">AI engineer</option>
+                        </select>
+                        <br>
+        
+        <label for="st">State :</label>
+        <select name ="st"  id="st" required >
+            <option value=" "><---state---></option>
+            <option value="Andhra Pradesh">Andhra Pradesh</option>
+            <option value="Telangana">Telangana</option>
+            <option value="Tamilnadu">Tamilnadu</option>
+            <option value="Kerala">Kerala</option>
+            <option value="Maharastra">Maharastra</option>
+            <option value="Karnataka">Karnataka</option>
+            <option value="Uttar Pradesh">Uttar Pradesh</option>
+            </select><br>
+        <input type="submit" value="Submit">
+
+    </form>
+    <a href="{{ url_for('pie_chart') }}">View Pie Chart</a>
+    <a href="{{ url_for('bar_chart') }}">View Bar Graph</a>
+      
+   
+</body>
+</html>
